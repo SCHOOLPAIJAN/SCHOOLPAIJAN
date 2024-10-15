@@ -1,106 +1,106 @@
 /* Estilos Generales */
 body {
-    font-family: 'Arial', sans-serif; /* Fuente general */
-    margin: 0; /* Elimina márgenes predeterminados */
-    padding: 0; /* Elimina padding predeterminado */
-    background-color: #f9f9f9; /* Color de fondo suave */
-    color: #333; /* Color de texto oscuro */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 h1, h2, h3 {
-    color: #4CAF50; /* Color verde para encabezados */
+    color: #4CAF50; /* Color verde de la marca */
 }
 
 a {
-    text-decoration: none; /* Sin subrayado en enlaces */
-    color: #4CAF50; /* Color verde para enlaces */
+    text-decoration: none;
+    color: #4CAF50; /* Color verde de la marca */
 }
 
 /* Encabezado */
 header {
-    background-color: #4CAF50; /* Color de fondo del encabezado */
-    color: white; /* Color del texto del encabezado */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Centra el texto */
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 nav ul {
-    list-style: none; /* Sin viñetas en la lista de navegación */
-    padding: 0; /* Elimina padding */
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline; /* Muestra los elementos en línea */
-    margin: 0 15px; /* Espaciado entre elementos de navegación */
+    display: inline;
+    margin: 0 15px;
 }
 
 /* Sección Hero */
 #hero {
-    background-color: #4CAF50; /* Color de fondo para la sección hero */
-    color: white; /* Color del texto */
-    padding: 50px 20px; /* Espaciado interno */
-    text-align: center; /* Centra el contenido */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 #hero button {
-    background-color: white; /* Color de fondo del botón */
-    color: #4CAF50; /* Color del texto del botón */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    border-radius: 5px; /* Bordes redondeados */
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 /* Sección de Productos */
 #productos {
-    padding: 20px; /* Espaciado interno */
+    padding: 20px;
 }
 
 .productos-grid {
-    display: grid; /* Usar grid para disposición de productos */
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsivo */
-    gap: 20px; /* Espacio entre productos */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
 .producto {
-    background: white; /* Color de fondo del producto */
-    padding: 15px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    text-align: center; /* Centra el texto dentro del producto */
-    transition: transform 0.2s; /* Efecto de transición al hacer hover */
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
 }
 
 .producto img {
-    max-width: 100%; /* Imagen no excede el ancho del contenedor */
-    height: auto; /* Altura automática para mantener la proporción */
+    max-width: 100%;
+    height: auto;
 }
 
 .producto:hover {
-    transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+    transform: scale(1.05);
 }
 
 /* Sección de Pago */
 #pago {
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Centra el contenido */
+    padding: 20px;
+    text-align: center;
 }
 
 .qr-container {
-    display: flex; /* Usar flexbox para la disposición */
-    justify-content: center; /* Centra los elementos */
-    gap: 40px; /* Espacio entre elementos QR */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
 /* Footer */
 footer {
-    background-color: #333; /* Color de fondo del pie de página */
-    color: white; /* Color del texto del pie de página */
-    text-align: center; /* Centra el texto */
-    padding: 10px; /* Espaciado interno */
-    position: relative; /* Posición relativa para el footer */
-    bottom: 0; /* Fija el pie de página */
-    width: 100%; /* Ancho completo */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Estilos Responsivos */
@@ -113,4 +113,3 @@ footer {
         flex-direction: column; /* Disposición vertical en pantallas pequeñas */
     }
 }
-
