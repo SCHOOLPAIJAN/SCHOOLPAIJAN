@@ -7,13 +7,18 @@ body {
     color: #333;
 }
 
-h1, h2, h3 {
-    color: #4CAF50; /* Color verde de la marca */
+h1 {
+    color: #FFFF00; /* Amarillo para el título principal */
+    font-size: 2.5em; /* Tamaño aumentado para SCHOOL PAIJAN */
+}
+
+h2, h3 {
+    color: white; /* Color blanco para otros encabezados */
 }
 
 a {
     text-decoration: none;
-    color: #4CAF50; /* Color verde de la marca */
+    color: white; /* Color blanco para los enlaces del menú */
 }
 
 /* Encabezado */
@@ -40,6 +45,14 @@ nav ul li {
     color: white;
     padding: 50px 20px;
     text-align: center;
+}
+
+#hero h2 {
+    color: white; /* Texto blanco */
+}
+
+#hero p {
+    color: white; /* Texto blanco */
 }
 
 #hero button {
