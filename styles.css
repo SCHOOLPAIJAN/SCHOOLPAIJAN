@@ -1,33 +1,54 @@
 /* Estilos Generales */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333; /* Color de texto general */
+    font-family: 'Arial', sans-serif; /* Fuente general */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina padding predeterminado */
+    background-color: #f9f9f9; /* Color de fondo suave */
+    color: #333; /* Color de texto oscuro */
 }
 
-/* Títulos */
-h1, h2 {
-    color: #FFFFFF; /* Cambiado a blanco */
+h1, h2, h3 {
+    color: #4CAF50; /* Color verde para encabezados */
 }
 
-h3 {
-    color: #FFD700; /* Amarillo para otros títulos */
-}
-
-/* Enlaces */
 a {
-    text-decoration: none;
+    text-decoration: none; /* Sin subrayado en enlaces */
     color: #4CAF50; /* Color verde para enlaces */
 }
 
 /* Encabezado */
 header {
-    background-color: #4CAF50; /* Fondo verde */
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #4CAF50; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+}
+
+nav ul {
+    list-style: none; /* Sin viñetas en la lista de navegación */
+    padding: 0; /* Elimina padding */
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos en línea */
+    margin: 0 15px; /* Espaciado entre elementos de navegación */
+}
+
+/* Sección Hero */
+#hero {
+    background-color: #4CAF50; /* Color de fondo para la sección hero */
+    color: white; /* Color del texto */
+    padding: 50px 20px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+}
+
+#hero button {
+    background-color: white; /* Color de fondo del botón */
+    color: #4CAF50; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 /* Sección de Productos */
@@ -50,23 +71,25 @@ header {
     transition: transform 0.2s; /* Efecto de transición al hacer hover */
 }
 
-/* Nombre del producto en verde */
-.producto h3 {
-    color: #4CAF50; /* Verde para el nombre del producto */
+.producto img {
+    max-width: 100%; /* Imagen no excede el ancho del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
 }
 
-/* Estilos para Yape y Plin */
+.producto:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+}
+
+/* Sección de Pago */
 #pago {
     padding: 20px; /* Espaciado interno */
     text-align: center; /* Centra el contenido */
 }
 
-.yape {
-    color: #4BB543; /* Color verde característico de Yape */
-}
-
-.plin {
-    color: #FF3D00; /* Color rojo característico de Plin */
+.qr-container {
+    display: flex; /* Usar flexbox para la disposición */
+    justify-content: center; /* Centra los elementos */
+    gap: 40px; /* Espacio entre elementos QR */
 }
 
 /* Footer */
@@ -75,12 +98,19 @@ footer {
     color: white; /* Color del texto del pie de página */
     text-align: center; /* Centra el texto */
     padding: 10px; /* Espaciado interno */
+    position: relative; /* Posición relativa para el footer */
+    bottom: 0; /* Fija el pie de página */
+    width: 100%; /* Ancho completo */
 }
 
 /* Estilos Responsivos */
 @media (max-width: 768px) {
     .productos-grid {
         grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .qr-container {
+        flex-direction: column; /* Disposición vertical en pantallas pequeñas */
     }
 }
 
