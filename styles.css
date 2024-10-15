@@ -7,18 +7,20 @@ body {
     color: #333;
 }
 
-/* Encabezado */
+/* SCHOOL PAIJAN en amarillo y más grande */
 header h1 {
-    color: #FFFF00; /* Amarillo para el título principal */
-    font-size: 2.5em; /* Tamaño aumentado para SCHOOL PAIJAN */
+    color: #FFFF00; /* Amarillo */
+    font-size: 2.5em;
     margin: 0;
 }
 
+/* Enlaces del menú en blanco */
 nav a {
-    color: white; /* Blanco para los enlaces del menú */
+    color: white;
     font-weight: bold;
 }
 
+/* Encabezado */
 header {
     background-color: #4CAF50;
     padding: 20px;
@@ -36,16 +38,9 @@ nav ul li {
     margin: 0 15px;
 }
 
-/* Sección Hero */
-#hero {
-    background-color: #4CAF50;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
+/* Hero: "Bienvenido a SCHOOL PAIJAN" en blanco */
 #hero h2 {
-    color: white; /* Blanco para el título "Bienvenido a SCHOOL PAIJAN" */
+    color: white;
     font-size: 2em;
 }
 
@@ -65,6 +60,10 @@ nav ul li {
 /* Sección de Productos */
 #productos {
     padding: 20px;
+}
+
+#productos h2 {
+    color: #4CAF50; /* Verde para el título del catálogo */
 }
 
 .productos-grid {
@@ -87,13 +86,12 @@ nav ul li {
     height: auto;
 }
 
-.producto:hover {
-    transform: scale(1.05);
+.producto h3 {
+    color: #4CAF50; /* Verde para los nombres de productos */
 }
 
-/* Asegura que los títulos de productos y pagos conserven su color verde */
-#productos h2, .producto h3, #pago h2, .qr-container h3 {
-    color: #4CAF50;
+.producto:hover {
+    transform: scale(1.05);
 }
 
 /* Sección de Pago */
@@ -102,10 +100,24 @@ nav ul li {
     text-align: center;
 }
 
+#pago h2 {
+    color: #4CAF50; /* Verde para Opciones de Pago */
+}
+
+/* Ajuste del tamaño y alineación de los QR */
 .qr-container {
     display: flex;
     justify-content: center;
     gap: 40px;
+}
+
+.qr-container div {
+    text-align: center;
+}
+
+.qr-container img {
+    max-width: 150px; /* Limitar el tamaño del QR */
+    height: auto;
 }
 
 /* Footer */
@@ -127,5 +139,6 @@ footer {
 
     .qr-container {
         flex-direction: column;
+        align-items: center;
     }
 }
