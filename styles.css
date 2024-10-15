@@ -12,13 +12,13 @@ h1 {
     font-size: 2.5em; /* Tamaño aumentado para SCHOOL PAIJAN */
 }
 
-h2, h3 {
-    color: white; /* Color blanco para otros encabezados */
+nav a {
+    color: white; /* Color blanco para los enlaces del menú */
 }
 
-a {
-    text-decoration: none;
-    color: white; /* Color blanco para los enlaces del menú */
+/* Solo el título "Bienvenido a SCHOOL PAIJAN" en blanco */
+#hero h2 {
+    color: white;
 }
 
 /* Encabezado */
@@ -41,18 +41,14 @@ nav ul li {
 
 /* Sección Hero */
 #hero {
-    background-color: #4CAF50; /* Color de fondo */
+    background-color: #4CAF50;
     color: white;
     padding: 50px 20px;
     text-align: center;
 }
 
-#hero h2 {
-    color: white; /* Texto blanco */
-}
-
 #hero p {
-    color: white; /* Texto blanco */
+    color: white; /* Mantener el texto visible */
 }
 
 #hero button {
@@ -93,6 +89,10 @@ nav ul li {
     transform: scale(1.05);
 }
 
+#productos h2, .producto h3, #pago h2, .qr-container h3 {
+    color: #4CAF50; /* Mantener el color verde original */
+}
+
 /* Sección de Pago */
 #pago {
     padding: 20px;
@@ -119,10 +119,10 @@ footer {
 /* Estilos Responsivos */
 @media (max-width: 768px) {
     .productos-grid {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        grid-template-columns: 1fr;
     }
 
     .qr-container {
-        flex-direction: column; /* Disposición vertical en pantallas pequeñas */
+        flex-direction: column;
     }
 }
