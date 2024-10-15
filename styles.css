@@ -7,10 +7,16 @@ body {
     color: #333; /* Color de texto general */
 }
 
-h1, h2, h3 {
-    color: #FFFFFF; /* Cambiado a blanco para mayor contraste */
+/* Títulos */
+h1, h2 {
+    color: #FFFFFF; /* Cambiado a blanco */
 }
 
+h3 {
+    color: #FFD700; /* Amarillo para otros títulos */
+}
+
+/* Enlaces */
 a {
     text-decoration: none;
     color: #4CAF50; /* Color verde para enlaces */
@@ -18,92 +24,57 @@ a {
 
 /* Encabezado */
 header {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Fondo verde */
     color: white;
     padding: 20px;
     text-align: center;
-}
-
-/* Resto del CSS... */
-
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-/* Sección Hero */
-#hero {
-    background-color: #4CAF50; /* Color de fondo */
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#hero button {
-    background-color: white;
-    color: #4CAF50;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
 }
 
 /* Sección de Productos */
 #productos {
-    padding: 20px;
+    padding: 20px; /* Espaciado interno */
 }
 
 .productos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    display: grid; /* Usar grid para disposición de productos */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsivo */
+    gap: 20px; /* Espacio entre productos */
 }
 
 .producto {
-    background: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.2s;
+    background: white; /* Color de fondo del producto */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center; /* Centra el texto dentro del producto */
+    transition: transform 0.2s; /* Efecto de transición al hacer hover */
 }
 
-.producto img {
-    max-width: 100%;
-    height: auto;
+/* Nombre del producto en verde */
+.producto h3 {
+    color: #4CAF50; /* Verde para el nombre del producto */
 }
 
-.producto:hover {
-    transform: scale(1.05);
-}
-
-/* Sección de Pago */
+/* Estilos para Yape y Plin */
 #pago {
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
 }
 
-.qr-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+.yape {
+    color: #4BB543; /* Color verde característico de Yape */
+}
+
+.plin {
+    color: #FF3D00; /* Color rojo característico de Plin */
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: #333; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espaciado interno */
 }
 
 /* Estilos Responsivos */
@@ -111,8 +82,5 @@ footer {
     .productos-grid {
         grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
     }
-
-    .qr-container {
-        flex-direction: column; /* Disposición vertical en pantallas pequeñas */
-    }
 }
+
