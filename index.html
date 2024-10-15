@@ -3,61 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gadgets Futuristas - SCHOOL PAIJAN</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Fuente Roboto -->
+    <title>SCHOOL PAIJAN - Útiles Escolares</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener este archivo CSS -->
 </head>
 <body>
     <header>
-        <h1>Gadgets Futuristas</h1>
+        <h1>SCHOOL PAIJAN</h1>
         <nav>
             <ul>
-                <li><a href="#home">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#pago">Pagar</a></li>
             </ul>
         </nav>
     </header>
 
+    <section id="hero">
+        <h2>Bienvenido a SCHOOL PAIJAN</h2>
+        <p>Tu tienda de útiles escolares en Paiján, La Libertad.</p>
+        <button onclick="verProductos()">Ver Productos</button>
+    </section>
+
     <section id="productos">
-        <h2>Catálogo de Gadgets</h2>
+        <h2>Catálogo de Productos</h2>
         <div class="productos-grid">
             <div class="producto">
-                <img src="imagenes/gadget1.jpg" alt="Gadget 1">
-                <h3>Gadget 1</h3>
-                <p>Descripción breve del gadget 1. Aquí puedes añadir detalles interesantes sobre el producto.</p>
-                <button class="info-button">Más Info</button>
+                <img src="imagenes/lapicero.jpg" alt="Lapicero Azul">
+                <h3>Lapicero Azul</h3>
+                <p>S/ 1.50</p>
+                <button>Comprar</button>
             </div>
             <div class="producto">
-                <img src="imagenes/gadget2.jpg" alt="Gadget 2">
-                <h3>Gadget 2</h3>
-                <p>Descripción breve del gadget 2. Resalta características únicas que podrían interesar a los clientes.</p>
-                <button class="info-button">Más Info</button>
+                <img src="imagenes/cuaderno.jpg" alt="Cuaderno A4">
+                <h3>Cuaderno A4</h3>
+                <p>S/ 8.00</p>
+                <button>Comprar</button>
             </div>
             <div class="producto">
-                <img src="imagenes/gadget3.jpg" alt="Gadget 3">
-                <h3>Gadget 3</h3>
-                <p>Descripción breve del gadget 3. Asegúrate de incluir información útil para los compradores.</p>
-                <button class="info-button">Más Info</button>
+                <img src="imagenes/goma.jpg" alt="Goma de Borrar">
+                <h3>Goma de Borrar</h3>
+                <p>S/ 0.80</p>
+                <button>Comprar</button>
             </div>
             <div class="producto">
-                <img src="imagenes/gadget4.jpg" alt="Gadget 4">
-                <h3>Gadget 4</h3>
-                <p>Descripción breve del gadget 4. Describe por qué este gadget es imprescindible.</p>
-                <button class="info-button">Más Info</button>
+                <img src="imagenes/lapiz.jpg" alt="Lápiz HB">
+                <h3>Lápiz HB</h3>
+                <p>S/ 1.00</p>
+                <button>Comprar</button>
+            </div>
+            <!-- Añade más productos según sea necesario -->
+        </div>
+    </section>
+
+    <section id="pago">
+        <h2>Opciones de Pago</h2>
+        <p>Paga fácilmente con Yape o Plin.</p>
+        <div class="qr-container">
+            <div>
+                <h3>Yape</h3>
+                <img src="imagenes/qr-yape.png" alt="QR Yape">
+            </div>
+            <div>
+                <h3>Plin</h3>
+                <img src="imagenes/qr-plin.png" alt="QR Plin">
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 SCHOOL PAIJAN. Todos los derechos reservados.</p>
-        <div class="medios-pago">
-            <p>Aceptamos pagos con:</p>
-            <img src="imagenes/yape.png" alt="Yape" class="logo-pago">
-            <img src="imagenes/plin.png" alt="Plin" class="logo-pago">
-        </div>
+        <p>© 2024 SCHOOL PAIJAN. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Asegúrate de tener este archivo JS -->
 </body>
 </html>
