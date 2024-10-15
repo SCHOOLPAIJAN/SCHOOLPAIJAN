@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Útiles Escolares Paiján</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <h1>Paiján Útiles Futuristas</h1>
+        <nav>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#pago">Pagar</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Todo lo que necesitas para el regreso a clases</h2>
+        <p>Explora nuestra tienda con ofertas exclusivas para Paiján.</p>
+        <button onclick="verProductos()">Ver productos</button>
+    </section>
+
+    <section id="productos">
+        <h2>Catálogo</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="imagenes/lapicero.jpg" alt="Lapicero">
+                <h3>Lapicero Azul</h3>
+                <p>S/ 1.50</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/cuaderno.jpg" alt="Cuaderno">
+                <h3>Cuaderno A4</h3>
+                <p>S/ 8.00</p>
+                <button>Comprar</button>
+            </div>
+            <!-- Más productos -->
+        </div>
+    </section>
+
+    <section id="pago">
+        <h2>Opciones de Pago</h2>
+        <p>Paga de forma rápida con Yape o Plin.</p>
+        <div class="qr-container">
+            <div>
+                <h3>Yape</h3>
+                <img src="imagenes/qr-yape.png" alt="QR Yape">
+            </div>
+            <div>
+                <h3>Plin</h3>
+                <img src="imagenes/qr-plin.png" alt="QR Plin">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Útiles Escolares Paiján. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
