@@ -1,72 +1,115 @@
-* {
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0d1117;
-    color: #c9d1d9;
-    overflow-x: hidden;
+h1, h2, h3 {
+    color: #4CAF50; /* Color verde de la marca */
 }
 
-.navbar {
-    background-color: #161b22;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar h1 {
-    font-size: 24px;
-}
-
-.navbar a {
-    color: #58a6ff;
-    margin-left: 15px;
+a {
     text-decoration: none;
+    color: #4CAF50; /* Color verde de la marca */
 }
 
-#hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+/* Encabezado */
+header {
+    background-color: #4CAF50;
     color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-#productos {
-    padding: 50px;
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Sección Hero */
+#hero {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white;
+    padding: 50px 20px;
     text-align: center;
+}
+
+#hero button {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Sección de Productos */
+#productos {
+    padding: 20px;
 }
 
 .productos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
 .producto {
-    background-color: #161b22;
-    padding: 20px;
-    border-radius: 8px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.2s;
 }
 
 .producto img {
-    width: 100px;
+    max-width: 100%;
     height: auto;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+/* Sección de Pago */
+#pago {
+    padding: 20px;
+    text-align: center;
 }
 
 .qr-container {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: center;
+    gap: 40px;
 }
 
+/* Footer */
 footer {
-    background-color: #161b22;
-    padding: 10px;
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .productos-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .qr-container {
+        flex-direction: column; /* Disposición vertical en pantallas pequeñas */
+    }
 }
