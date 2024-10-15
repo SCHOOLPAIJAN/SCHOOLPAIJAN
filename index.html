@@ -3,47 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Útiles Escolares Paiján</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <title>SCHOOL PAIJAN - Útiles Escolares</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener este archivo CSS -->
 </head>
 <body>
-    <header class="navbar">
-        <h1>Paiján Útiles Futuristas</h1>
+    <header>
+        <h1>SCHOOL PAIJAN</h1>
         <nav>
-            <a href="#productos">Productos</a>
-            <a href="#contacto">Contacto</a>
-            <a href="#pago">Pagar</a>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#pago">Pagar</a></li>
+            </ul>
         </nav>
     </header>
 
     <section id="hero">
-        <h2>Todo lo que necesitas para el regreso a clases</h2>
-        <p>Explora nuestra tienda con ofertas exclusivas para Paiján.</p>
-        <button onclick="verProductos()">Ver productos</button>
+        <h2>Bienvenido a SCHOOL PAIJAN</h2>
+        <p>Tu tienda de útiles escolares en Paiján, La Libertad.</p>
+        <button onclick="verProductos()">Ver Productos</button>
     </section>
 
     <section id="productos">
-        <h2>Catálogo</h2>
+        <h2>Catálogo de Productos</h2>
         <div class="productos-grid">
             <div class="producto">
-                <img src="imagenes/lapicero.jpg" alt="Lapicero">
+                <img src="imagenes/lapicero.jpg" alt="Lapicero Azul">
                 <h3>Lapicero Azul</h3>
                 <p>S/ 1.50</p>
                 <button>Comprar</button>
             </div>
             <div class="producto">
-                <img src="imagenes/cuaderno.jpg" alt="Cuaderno">
+                <img src="imagenes/cuaderno.jpg" alt="Cuaderno A4">
                 <h3>Cuaderno A4</h3>
                 <p>S/ 8.00</p>
                 <button>Comprar</button>
             </div>
+            <div class="producto">
+                <img src="imagenes/goma.jpg" alt="Goma de Borrar">
+                <h3>Goma de Borrar</h3>
+                <p>S/ 0.80</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/lapiz.jpg" alt="Lápiz HB">
+                <h3>Lápiz HB</h3>
+                <p>S/ 1.00</p>
+                <button>Comprar</button>
+            </div>
+            <!-- Añade más productos según sea necesario -->
         </div>
     </section>
 
     <section id="pago">
         <h2>Opciones de Pago</h2>
-        <p>Paga de forma rápida con Yape o Plin.</p>
+        <p>Paga fácilmente con Yape o Plin.</p>
         <div class="qr-container">
             <div>
                 <h3>Yape</h3>
@@ -57,8 +71,10 @@
     </section>
 
     <footer>
-        <p>© 2024 Útiles Escolares Paiján. Todos los derechos reservados.</p>
+        <p>© 2024 SCHOOL PAIJAN. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="script.js"></script> <!-- Asegúrate de tener este archivo JS -->
 </body>
 </html>
 
