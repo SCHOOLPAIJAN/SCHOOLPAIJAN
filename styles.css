@@ -10,7 +10,7 @@ body {
 /* SCHOOL PAIJAN en amarillo y más grande */
 header h1 {
     color: #FFFF00; /* Amarillo */
-    font-size: 2.5em;
+    font-size: 3em;
     margin: 0;
 }
 
@@ -38,14 +38,27 @@ nav ul li {
     margin: 0 15px;
 }
 
-/* Hero: "Bienvenido a SCHOOL PAIJAN" en blanco */
-#hero h2 {
+/* Sección Hero: Centrado Vertical y Horizontal */
+#hero {
+    background-color: #4CAF50;
     color: white;
-    font-size: 2em;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    text-align: center;
+    gap: 15px; /* Espacio entre elementos */
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
 #hero p {
-    color: white;
+    font-size: 1.2em;
+    margin: 0;
 }
 
 #hero button {
@@ -55,15 +68,19 @@ nav ul li {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 /* Sección de Productos */
 #productos {
-    padding: 20px;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 #productos h2 {
-    color: #4CAF50; /* Verde para el título del catálogo */
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 30px;
 }
 
 .productos-grid {
@@ -87,7 +104,7 @@ nav ul li {
 }
 
 .producto h3 {
-    color: #4CAF50; /* Verde para los nombres de productos */
+    color: #4CAF50;
 }
 
 .producto:hover {
@@ -96,15 +113,16 @@ nav ul li {
 
 /* Sección de Pago */
 #pago {
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
 #pago h2 {
-    color: #4CAF50; /* Verde para Opciones de Pago */
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 30px;
 }
 
-/* Ajuste del tamaño y alineación de los QR */
 .qr-container {
     display: flex;
     justify-content: center;
@@ -116,7 +134,7 @@ nav ul li {
 }
 
 .qr-container img {
-    max-width: 150px; /* Limitar el tamaño del QR */
+    max-width: 120px;
     height: auto;
 }
 
