@@ -7,24 +7,20 @@ body {
     color: #333;
 }
 
-h1 {
+/* Encabezado */
+header h1 {
     color: #FFFF00; /* Amarillo para el título principal */
     font-size: 2.5em; /* Tamaño aumentado para SCHOOL PAIJAN */
+    margin: 0;
 }
 
 nav a {
-    color: white; /* Color blanco para los enlaces del menú */
+    color: white; /* Blanco para los enlaces del menú */
+    font-weight: bold;
 }
 
-/* Solo el título "Bienvenido a SCHOOL PAIJAN" en blanco */
-#hero h2 {
-    color: white;
-}
-
-/* Encabezado */
 header {
     background-color: #4CAF50;
-    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -32,6 +28,7 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0;
 }
 
 nav ul li {
@@ -47,8 +44,13 @@ nav ul li {
     text-align: center;
 }
 
+#hero h2 {
+    color: white; /* Blanco para el título "Bienvenido a SCHOOL PAIJAN" */
+    font-size: 2em;
+}
+
 #hero p {
-    color: white; /* Mantener el texto visible */
+    color: white;
 }
 
 #hero button {
@@ -89,8 +91,9 @@ nav ul li {
     transform: scale(1.05);
 }
 
+/* Asegura que los títulos de productos y pagos conserven su color verde */
 #productos h2, .producto h3, #pago h2, .qr-container h3 {
-    color: #4CAF50; /* Mantener el color verde original */
+    color: #4CAF50;
 }
 
 /* Sección de Pago */
